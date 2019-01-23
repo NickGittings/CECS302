@@ -27,7 +27,7 @@ public:
 	}
 
 	/*---------------Function Definitions---------------*/
-	//Function to print tree taking BinaryNode root parameter O(N)
+	//Function to print tree taking BinaryNode root parameter O(logN)
 	void printTree() {
 
 		if(r == nullptr) {
@@ -49,7 +49,7 @@ public:
 		}
 	}
 
-	//Inserts node down the tree in the next spot O(N)
+	//Inserts node down the tree in the next spot O(logN)
 	void insertNode(int input) {
 
 		queue<BinaryNode*> q;
@@ -84,7 +84,7 @@ public:
 		}
 	}
 
-	//Returns number of nodes in tree O(N)
+	//Returns number of nodes in tree O(logN)
 	int returnNodes() {
 		int counter;
 
@@ -109,7 +109,7 @@ public:
 		return counter;
 	}
 
-	//Returns number of leaves in tree O(N)
+	//Returns number of leaves in tree O(logN)
 	int returnLeaves() {
 		double counter = 0.0;
 
@@ -142,7 +142,7 @@ public:
 		return counter;
 	}
 
-	//Returns number of full nodes in tree O(N)
+	//Returns number of full nodes in tree O(logN)
 	int returnFullNodes() {
 		int counter = 0;
 
